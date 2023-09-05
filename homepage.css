@@ -1,0 +1,19 @@
+.column {
+  float: left;
+  width: 40%;
+  padding: 20px;
+  height: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.maincontent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}

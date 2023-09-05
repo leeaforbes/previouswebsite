@@ -1,0 +1,130 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+	height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+        
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #e6e6e6;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+}
+
+.routelistdiv {
+	width: 230px;
+	height: 400px;
+	overflow: auto;
+	padding: 5px;
+	background-color: lightblue;
+}
+
+.routediv {
+	width: 200px;
+	height: 50px;
+	overflow: auto;
+	border: 3px;
+	border-color: #c4c4c4;
+	border-style: solid;
+	border-radius: 10px;
+	background-color: white;
+	vertical-align: center;
+	padding: 5px;
+}
+
+.routediv label {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+input.bigcheckbox { 
+	width: 30px;
+	height: 30px;
+}
+
+input.numberbox {
+	font-size: 20px;
+	width: 80px;
+}
+
+label.funtext{
+	font-size: 30px;
+	vertical-align: top;
+}
+
+label.smallfuntext{
+	font-size: 15px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+
+/*things tacked onto the front of all spans inside animatebutton*/
+.animatebutton span:before {
+	content: '\1f3c3';
+	position: absolute;
+	opacity: 0;
+	left: 0px;
+	top: -3px;
+	transition: 0.5s;
+}
+
+/*popup stuff from w3*/
+.popup .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}

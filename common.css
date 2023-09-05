@@ -1,0 +1,111 @@
+.header {
+	background-image: url("commonimages/gradient.png");
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	margin: 0 5%;
+	height: 100px;
+}
+
+.headerpic {
+	float: left;
+	height: 100%;
+}
+
+.headertext {
+	float: left;
+	font-size: 50px;
+	padding: 25px 0px 0px;
+	font-family: Impact, Charcoal, sans-serif;
+}
+
+.middle {
+	background: lightgray;
+	margin: 0 5%;
+}
+
+.navigation {
+	float: right;
+	margin: 10px;
+	width: 150px;
+	list-style-type: none;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 10px;
+}
+
+.navigation a {
+	display: block;
+	padding: 10px 10px;
+	background-color: #3DF;
+	color: black;
+	text-decoration: none;
+	border: 1px black solid;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+
+.navigation a:hover {
+	background-color: #BAEFFF;
+}
+
+.navigation a span {
+	position: relative;
+	float: right;
+	right: 10px;
+	top: -3px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.navigation a:hover span{
+	right: 0;
+	opacity: 1;
+}
+
+.footer {
+	background-image: url("commonimages/gradient_flipped.png");
+	background-repeat: repeat-x;
+	background-size: 100% 100%;
+	height: 100px;
+	margin: 0 5%;
+}
+
+.footer .footertext{
+	font-size: 20px;
+	padding: 75px 0 0 0;
+	float: right;
+}
+
+/*general button properties*/
+.animatebutton {
+  border-radius: 100px;
+  background-color: #BAEFFF;
+  border: 3px black solid;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  margin: 10px;
+}
+
+/*apply to all spans inside animatebutton*/
+.animatebutton span {
+  position: relative;
+  transition: 0.5s;
+}
+
+/*properties applied to all spans inside animatebutton on hover*/
+.animatebutton:hover span {
+  padding-left: 25px;
+}
+
+/*properties applied to all things tacked onto the front of all spans inside animatebutton on hover*/
+.animatebutton:hover span:before {
+  opacity: 1;
+  left: 20;
+}
+
+.bodycolor {
+  background-color: #BAEFFF;
+}

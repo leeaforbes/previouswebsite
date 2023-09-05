@@ -1,0 +1,24 @@
+/*things tacked onto the front of all spans inside animatebutton*/
+.animatebutton span:before {
+	content: '\1F98B';
+	position: absolute;
+	opacity: 0;
+	left: 0px;
+	top: -3px;
+	transition: 0.5s;
+}
+
+.tablestuff {
+	border: 1px solid black;
+	margin: 0 10px;
+}
+
+.tablestuff th {
+	border: 1px solid black;
+	margin: 0 10px;
+}
+
+.tablestuff td {
+	border: 1px solid black;
+	margin: 0 10px;
+}
